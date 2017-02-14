@@ -334,7 +334,7 @@ var enquiry = new GlideRecord('x_10241_shopfront_activity_table');
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-02-01 23:32:56</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>3f39c5b30f6432009da487ece1050eff</sys_id>
         <sys_mod_count>33</sys_mod_count>
         <sys_name>Test Page</sys_name>

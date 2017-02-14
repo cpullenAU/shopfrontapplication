@@ -284,9 +284,8 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2017-02-13 23:35:22</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
             <sys_id>7f3d3e670f3032009da487ece1050e33</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_10241_shopfront_activity_table</sys_name>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="question_choice">
     <question_choice action="INSERT_OR_UPDATE">
-        <misc>0</misc>
+        <misc>0.00</misc>
         <order>1</order>
         <question display_value="Enquiry Type">f84bf49b0f2032009da487ece1050e3b</question>
-        <rec_misc>0</rec_misc>
+        <rec_misc>0.00</rec_misc>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-01-31 09:13:15</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>784bf49b0f2032009da487ece1050e3c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Choice 1</sys_name>

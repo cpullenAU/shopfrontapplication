@@ -5,13 +5,13 @@
         <array>false</array>
         <attributes/>
         <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
+        <calculation>(function calculatedFieldValue(current) {
 
 	// Add your code here
 	return '';  // return the calculated value
 
-})(current);]]></calculation>
-        <choice/>
+})(current);</calculation>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Enquiry Type</column_label>
@@ -30,7 +30,7 @@
         <element>enquiry_type</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Choice">choice</internal_type>
         <mandatory>false</mandatory>
         <max_length>250</max_length>
         <name>x_10241_shopfront_activity_table</name>
@@ -52,16 +52,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-01-31 08:21:54</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>a91fec530f2032009da487ece1050e0d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>97cc4b6bdb38f200063a745bbf961985</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Enquiry Type</sys_name>
         <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
         <sys_update_name>sys_dictionary_x_10241_shopfront_activity_table_enquiry_type</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-02-03 00:36:35</sys_updated_on>
+        <sys_updated_by>aCPullen</sys_updated_by>
+        <sys_updated_on>2017-02-14 01:46:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
