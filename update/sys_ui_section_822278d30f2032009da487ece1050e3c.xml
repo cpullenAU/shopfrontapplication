@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Walk In Customer Register" section_id="822278d30f2032009da487ece1050e3c" sys_domain="global" table="x_10241_shopfront_activity_table" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>63fb59530f3032009da487ece1050e5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>follow_up_required</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>e3fb59530f3032009da487ece1050e5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>customer_phone_number</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>67fb59530f3032009da487ece1050e5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>e7fb59530f3032009da487ece1050e5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_by</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>6bfb59530f3032009da487ece1050e5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>customer_email</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>ebfb59530f3032009da487ece1050e5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>enquiry_type_details</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>6ffb59530f3032009da487ece1050e5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>enquiry_other_details</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>effb59530f3032009da487ece1050e5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>additional_comments</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>63fb59530f3032009da487ece1050e5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>customer_type</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>e3fb59530f3032009da487ece1050e5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>customer_member_number</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>67fb59530f3032009da487ece1050e5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_on</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>e7fb59530f3032009da487ece1050e5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_by</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-02-12 21:51:58</sys_created_on>
+            <sys_id>6bfb59530f3032009da487ece1050e5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-02-12 21:51:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Walk In Customer Register</caption>
+            <header>false</header>
+            <name>x_10241_shopfront_activity_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-01-31 08:33:28</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>822278d30f2032009da487ece1050e3c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Walk In Customer Register</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+            <sys_update_name>sys_ui_section_822278d30f2032009da487ece1050e3c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-01-31 08:33:28</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

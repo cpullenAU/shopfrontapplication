@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="db107c930f2032009da487ece1050eac" sys_domain="global" table="x_10241_shopfront_activity_table" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-01-31 08:33:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a2278d30f2032009da487ece1050e3c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_10241_shopfront_activity_table" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">db107c930f2032009da487ece1050eac</sys_ui_form>
+            <sys_ui_section caption="Walk In Customer Register" display_value="Walk In Customer Register" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">822278d30f2032009da487ece1050e3c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-01-31 08:33:28</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-01-31 08:24:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>53107c930f2032009da487ece1050ead</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_10241_shopfront_activity_table" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">db107c930f2032009da487ece1050eac</sys_ui_form>
+            <sys_ui_section caption="Customer Details" display_value="Customer Details" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">e5df2c130f2032009da487ece1050efd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-01-31 08:33:28</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-01-31 08:24:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d3107c930f2032009da487ece1050ead</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_10241_shopfront_activity_table" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">db107c930f2032009da487ece1050eac</sys_ui_form>
+            <sys_ui_section caption="Enquiry Details" display_value="Enquiry Details" name="x_10241_shopfront_activity_table" sys_domain="global" view="Default view">57107c930f2032009da487ece1050eac</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-01-31 08:33:28</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_10241_shopfront_activity_table</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-01-31 08:24:33</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db107c930f2032009da487ece1050eac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_10241_shopfront_activity_table</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+            <sys_update_name>sys_ui_form_sections_db107c930f2032009da487ece1050eac</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-01-31 08:24:33</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

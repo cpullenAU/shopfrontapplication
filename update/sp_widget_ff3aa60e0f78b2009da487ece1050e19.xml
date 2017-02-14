@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>record_producer</id>
+        <internal>false</internal>
+        <link/>
+        <name>Record Producer</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-02-09 06:21:27</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ff3aa60e0f78b2009da487ece1050e19</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Record Producer</sys_name>
+        <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+        <sys_update_name>sp_widget_ff3aa60e0f78b2009da487ece1050e19</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-02-09 06:22:38</sys_updated_on>
+        <template><![CDATA[   <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous"></link>
+            <style>
+                html {
+                    font-size: 16px;
+                }
+                
+                body {
+                    font-size: 1rem;
+                    line-height: 1.2;
+                }
+                
+                fieldset {
+                    margin-bottom: 20px;
+                }
+                
+                .form-control {
+                    border-radius: 0;
+                    border: 1px solid rgb(220, 220, 220);
+                    background-color: rgb(246, 246, 246);
+                }
+                
+                .form-label {
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                }
+                
+                .btn {
+                    border-radius: 0;
+                    border-style: none;
+                }
+                
+                .btn-primary {
+                    background-color: #e37321;
+                }
+                
+                .btn-primary:hover {
+                    background-color: #e68138;
+                }
+                
+                .btn-group.no-pad {
+                    padding: 0;
+                }
+                
+                .btn-group .btn-default {
+                    background-color: transparent;
+                    border: 1px solid #424242;
+                    color: #424242;
+                }
+                
+                .btn-group .btn-default.active {
+                    background-color: #575757;
+                    color: #ffffff;
+                }
+                
+                .btn-group .btn-default:hover {
+                    background-color: #bbb;
+                }
+                
+                .btn-group .btn-default.active:hover {
+                    background-color: #262626;
+                    border-color: #424242;
+                }
+            </style>
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                crossorigin="anonymous"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                    crossorigin="anonymous"></script>
+                    <script src="index.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://www.australianunity.com.au" style="height: auto; width: 160px">
+                        <img alt="Australian Unity" src="http://www.australianunity.com.au/areas/healthinsurance/content/img/global/aulogo.svg" />
+                    </a>
+                </div>
+                <h3>Shopfront enquiry capture</h3>
+            </div>
+        </nav>
+        <div class="container">
+            <g:ui_form>
+                <div class="form-horizontal">
+                    <fieldset>
+                        <legend>Customer details</legend>
+                        <div class="form-group">
+                            <div class="col-sm-4">
+                                <div id="custTypeButtons" class="btn-group btn-group-justified btn-sm no-pad" data-toggle="buttons">
+                                    <label class="btn btn-default ">
+                                        <input type="radio" name="custType" id="custTypeNew" value="New" />New customer
+                                    </label>
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="custType" id="custTypeExisting" value="Existing" checked="true"/>Existing customer
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="custMemberNumber" name="custMemberNumber" placeholder="Member number" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label>Customer has provided contact details</label>
+                                <div id="custDetailsButtons" class="btn-group btn-sm " data-toggle="buttons">
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="custDetailsPovided" id="custDetailsYes" value="Yes" checked="true"/>Yes
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="custDetailsPovided" id="enquiryCallbackNo" value="No"  />No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="custNameBlock" class="form-group">
+
+                            <div class="col-sm-12">
+                                <div class="form-label">Name</div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <div class="col-sm-6">
+                                        <label for="custFirstName" class="sr-only">Customer first name</label>
+                                        <input type="text" class="form-control" id="custFirstName" name="custFirstName" placeholder="First name" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="custLastName" class="sr-only">Customer last name</label>
+                                        <input type="text" class="form-control" id="custLastName" name="custLastName" placeholder="Last name" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label>Customer would like to be called back</label>
+                                <div id="callBackCustomerButtons" class="btn-group btn-sm " data-toggle="buttons">
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="enquiryCustCallback" id="enquiryCallbackYes" value="Yes" checked="true"/>Yes
+                                    </label>
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="enquiryCustCallback" id="enquiryCallbackNo" value="No"  />No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div id="customerDetailsBlock" class="form-group" style="margin-bottom:0;margin-top:5px">
+                                    <div class="col-sm-6">
+                                        <label for="custPhoneNumber" class="sr-only">Customer phone number</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></span>
+                                            <input type="text" class="form-control" id="custPhoneNumber" name="custPhoneNumber" placeholder="Phone number" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="custEmail" class="sr-only">Customer email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
+                                            <input type="email" class="form-control" id="custEmail" name="custEmail" placeholder="Email" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Enquiry details</legend>
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label for="enquiryType">Business area</label>
+                                <select class="form-control" id="enquiryType" name="enquiryType" required="true">
+                                    <option value="">Please select option...</option>
+                                    <option value="Health">Health insurance</option>
+                                    <option value="Investments">Investments</option>
+                                    <option value="Financial advice">Financial advice</option>
+                                    <option value="Banking">Banking</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="enquiryType">Enquiry type</label>
+                                <select class="form-control" id="enquiryDetail" name="enquiryDetail" required="true">
+                                    <option value="">Please select option...</option>
+                                    <option value="General enquiry" data-show-desc="true">General enquiry</option>
+                                    <option data-type="Health" value="Health insurance claim">Claim</option>
+                                    <option data-type="Investments" value="Health insurance claim">Claim</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8">
+                                <textarea id="enquiryDescription" name="enquiryDescription" class="form-control" rows="3" placeholder="Enquiry description"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8">
+                                <label for="notes">Additional notes</label>
+                                <textarea id="notes" name="notes" class="form-control" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit enquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </g:ui_form>
+        </div>
+    </body>
+]]></template>
+    </sp_widget>
+</record_update>

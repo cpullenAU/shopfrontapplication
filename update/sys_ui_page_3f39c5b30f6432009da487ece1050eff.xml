@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function onEnquiryDetailChange() {
+    var selectedDetail = $("#enquiryDetail").find(":checked");
+    if (selectedDetail.data("show-desc")) {
+        $("#enquiryDescription").show();
+    } else {
+        $("#enquiryDescription").hide();
+    }
+}
+
+function onEnquiryTypeChange() {
+    var selectedType = $("#enquiryType").find(":checked").val();
+    $("#enquiryDetail option").each(function () {
+        var dataType = $(this).data("type");
+        if (dataType) {
+            $(this).toggle(dataType == selectedType);
+        }
+    });
+}
+
+$(document).ready(function () {
+    onEnquiryDetailChange();
+    onEnquiryTypeChange();
+
+    $("#enquiryType").change(function () {
+        onEnquiryTypeChange();
+    });
+
+    $("#enquiryDetail").change(function () {
+        onEnquiryDetailChange();
+    });
+
+    $("#custTypeButtons .btn").click(function () {
+        if($("input", this).val() == "Existing"){
+            $("#custMemberNumber").show();
+        }
+        else{
+            $("#custMemberNumber").hide();
+        }
+    });
+    
+
+    $("#noCustName").click(function () {
+        if ($(this).is(":checked")) {
+            $("#custFirstName")
+                .val("Not provided")
+                .prop('disabled', true);
+
+            $("#custLastName")
+                .val("Not provided")
+                .prop('disabled', true);
+        } else {
+            $("#custFirstName")
+                .val("")
+                .prop('disabled', false);
+
+            $("#custLastName")
+                .val("")
+                .prop('disabled', false);
+        }
+    });
+
+    $("#noCustContact").click(function () {
+        if ($(this).is(":checked")) {
+            $("#custEmail")
+                .val("Not provided")
+                .prop('disabled', true);
+
+            $("#custPhoneNumber")
+                .val("Not provided")
+                .prop('disabled', true);
+        } else {
+            $("#custEmail")
+                .val("")
+                .prop('disabled', false);
+
+            $("#custPhoneNumber")
+                .val("")
+                .prop('disabled', false);
+        }
+    });
+});]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_10241_shopfront_Test Page.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+        <style>
+            html {
+                font-size: 16px;
+            }
+            
+            body {
+                font-size: 1rem;
+                line-height: 1.2;
+            }
+            
+            fieldset {
+                margin-bottom: 20px;
+            }
+            
+            .form-control {
+                border-radius: 0;
+                border: 1px solid rgb(220, 220, 220);
+                background-color: rgb(246, 246, 246);
+            }
+            
+            .form-label {
+                margin-bottom: 5px;
+                font-weight: 700;
+            }
+            
+            .btn {
+                border-radius: 0;
+                border-style: none;
+            }
+
+            .btn-primary {
+                background-color: #e37321;
+            }
+            
+            .btn-primary:hover {
+                background-color: #e68138;
+            }
+            .btn-group.no-pad {
+                padding: 0;
+            }
+
+            .btn-group .btn-default {
+                background-color: transparent;
+                border: 1px solid #424242;
+                color: #424242;
+            }
+
+            .btn-group .btn-default.active {
+                background-color: #575757;
+                color: #ffffff;
+            }
+            .btn-group .btn-default:hover {
+                background-color: #bbb;
+            }
+            .btn-group .btn-default.active:hover {
+                background-color: #262626;
+                border-color: #424242;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="https://www.australianunity.com.au" style="height: auto; width: 160px">
+                        <img alt="Australian Unity" src="http://www.australianunity.com.au/areas/healthinsurance/content/img/global/aulogo.svg" />
+                    </a>
+                </div>
+                <h3>Shopfront enquiry capture</h3>
+            </div>
+        </nav>
+        <div class="container">
+            <g:ui_form>
+                <div class="form-horizontal">
+                    <fieldset>
+                        <legend>Customer details</legend>
+                        <div class="form-group">
+                            <div class="col-sm-4">
+                                <div id="custTypeButtons" class="btn-group btn-group-justified btn-sm no-pad" data-toggle="buttons">
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="custType" id="custTypeNew" value="New" checked="true" />New customer
+                                    </label>
+                                    <label class="btn btn-default ">
+                                        <input type="radio" name="custType" id="custTypeExisting" value="Existing" />Existing customer
+                                    </label>                                
+                                </div>                                
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="custMemberNumber" name="custMemberNumber" placeholder="Member number" />                                    
+                            </div>  
+                        </div>
+                        <div class="form-label">Name</div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <div class="col-sm-6">
+                                        <label for="custFirstName" class="sr-only">Customer first name</label>
+                                        <input type="text" class="form-control" id="custFirstName" name="custFirstName" placeholder="First name" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="custLastName" class="sr-only">Customer last name</label>
+                                        <input type="text" class="form-control" id="custLastName" name="custLastName" placeholder="Last name" />
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input id="noCustName" type="checkbox" />Customer does not wish to provide name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="form-group" style="margin-bottom:0;margin-top:5px">
+                                    <div class="col-sm-6">
+                                        <label for="custPhoneNumber" class="sr-only">Customer phone number</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></span>
+                                            <input type="text" class="form-control" id="custPhoneNumber" name="custPhoneNumber" placeholder="Phone number" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="custEmail" class="sr-only">Customer email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></span>
+                                            <input type="email" class="form-control" id="custEmail" name="custEmail" placeholder="Email" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input id="noCustContact" type="checkbox" />Customer does not wish to provide contact details</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Enquiry details</legend>
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label for="enquiryType">Business area</label>
+                                <select class="form-control" id="enquiryType" name="enquiryType" required="true">
+                                    <option value="">Please select option...</option>
+                                    <option value="Health">Health insurance</option>
+                                    <option value="Investments">Investments</option>
+                                    <option value="Financial advice">Financial advice</option>
+                                    <option value="Banking">Banking</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="enquiryType">Enquiry type</label>
+                                <select class="form-control" id="enquiryDetail" name="enquiryDetail" required="true">
+                                    <option value="">Please select option...</option>
+                                    <option value="General enquiry" data-show-desc="true">General enquiry</option>
+                                    <option data-type="Health" value="Health insurance claim">Claim</option>
+                                    <option data-type="Investments" value="Health insurance claim">Claim</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-6">
+                                <textarea id="enquiryDescription" name="enquiryDescription" class="form-control" rows="3" placeholder="Enquiry description"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8">
+                                <label for="notes">Additional notes</label>
+                                <textarea id="notes" name="notes" class="form-control" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                Customer would like to be called back
+                                <div class="btn-group btn-sm " data-toggle="buttons">
+                                    <label class="btn btn-default">
+                                        <input type="radio" name="enquiryCustCallback" id="enquiryCallbackYes" value="Yes" />Yes
+                                    </label>
+                                    <label class="btn btn-default active">
+                                        <input type="radio" name="enquiryCustCallback" id="enquiryCallbackNo" value="No" checked="true" />No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit enquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </g:ui_form>
+        </div>
+    </body>
+
+    </html>
+</j:jelly>]]></html>
+        <name>Test Page</name>
+        <processing_script><![CDATA[(function(){
+var enquiry = new GlideRecord('x_10241_shopfront_activity_table');
+	enquiry.initialize();
+	enquiry.customer_type = custType;
+	enquiry.customer_first_name = custFirstName;
+	enquiry.customer_last_name = custLastName;
+	enquiry.customer_email = custEmail;
+	enquiry.customer_phone_number = custPhoneNumber;
+	enquiry.customer_member_number = custMemberNumber;
+	
+	enquiry.enquiry_type = enquiryType;
+	enquiry.enquiry_type_details = enquiryDetail;
+	enquiry.enquiry_other_details = enquiryDescription;
+	enquiry.follow_up_required = enquiryCustCallback;
+	
+	
+	enquiry.additional_comments = notes;
+	
+	enquiry.insert();
+})();
+
+	/* enquiry.customer_phone_number
+	enquiry.enquiry_type
+	enquiry.follow_up_required
+	enquiry.number
+	enquiry.request
+	
+	user.first_name = firstname;
+	user.last_name = lastname;
+	user.email = email;
+	user.password = password;
+	user.user_name = firstname.toLowerCase() + "." + lastname.toLowerCase();
+	user.insert();
+	
+	*/
+
+	
+
+]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-02-01 23:32:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3f39c5b30f6432009da487ece1050eff</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>Test Page</sys_name>
+        <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+        <sys_update_name>sys_ui_page_3f39c5b30f6432009da487ece1050eff</sys_update_name>
+        <sys_updated_by>michael</sys_updated_by>
+        <sys_updated_on>2017-02-03 06:18:34</sys_updated_on>
+    </sys_ui_page>
+</record_update>
