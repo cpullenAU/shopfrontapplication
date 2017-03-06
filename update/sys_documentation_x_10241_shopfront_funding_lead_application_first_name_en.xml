@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="first_name" label="First Name" language="en" table="x_10241_shopfront_funding_lead_application">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <help/>
+            <hint/>
+            <label>First Name</label>
+            <language>en</language>
+            <name>x_10241_shopfront_funding_lead_application</name>
+            <plural>First Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>aCPullen</sys_created_by>
+            <sys_created_on>2017-03-06 03:54:53</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>2878fe82db9dfe00063a745bbf961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>First Name</sys_name>
+            <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+            <sys_update_name>sys_documentation_x_10241_shopfront_funding_lead_application_first_name_en</sys_update_name>
+            <sys_updated_by>aCPullen</sys_updated_by>
+            <sys_updated_on>2017-03-06 03:54:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

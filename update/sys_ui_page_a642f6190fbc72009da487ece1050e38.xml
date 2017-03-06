@@ -187,6 +187,20 @@ $(document).ready(function () {
             <g:ui_form>
                 <div class="form-horizontal">
                     <fieldset>
+                       <legend>Branch details</legend>
+                        <div class="form-group">
+                            <div class="col-sm-6">
+                                <label for="enquiryType">Branch</label>
+                                <select class="form-control" id="branchDetails" name="branchDetails" required="true">
+                                    <option value="">Please select option...</option>
+                                    <option value="Coolangatta">Coolangatta</option>
+                                    <option value="Ballina">Ballina</option>
+                                    <option value="Armidale">Armidale</option>
+                                    <option value="Coffs Harbour">Coffs Harbour</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
                         <legend>Customer details</legend>
                         <div class="form-group">
                             <div class="col-sm-4">
@@ -196,12 +210,12 @@ $(document).ready(function () {
                                     </label>
                                     <label class="btn btn-default active" id="custTypeExisting">
                                         <input type="radio" name="custType"  value="Existing" checked="true"/>Existing customer
-                                    </label>
-                                </div>
+                                    </label>                                
+                                </div>                                
                             </div>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" id="custMemberNumber" name="custMemberNumber" placeholder="Member number" />
-                            </div>
+                                <input type="text" class="form-control" id="custMemberNumber" name="custMemberNumber" placeholder="Member number" />                                    
+                            </div>  
                         </div>
                         <div class="form-label">Name</div>
                         <div class="form-group">
@@ -268,6 +282,7 @@ $(document).ready(function () {
                                     <option value="General enquiry" data-show-desc="true">General enquiry</option>
                                     <option data-type="Home Care" value="NDIS">NDIS</option>
                                     <option data-type="Health" value="Health insurance claim">Claim</option>
+                                    <option data-type="Investments" value="Health insurance claim">Claim</option>
                                 </select>
                             </div>
                         </div>
@@ -316,6 +331,12 @@ $(document).ready(function () {
     if (custType) {
         enquiry.customer_type = custType;
     }
+	
+	if (branchDetails) {
+		enquiry.branch_details = branchDetails;
+	}
+	
+	
     if (custFirstName) {
         enquiry.customer_first_name = custFirstName;
     }
@@ -365,16 +386,16 @@ $(document).ready(function () {
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-02-06 23:01:09</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>a642f6190fbc72009da487ece1050e38</sys_id>
-        <sys_mod_count>75</sys_mod_count>
+        <sys_mod_count>77</sys_mod_count>
         <sys_name>Shopfront Entry Form</sys_name>
         <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
         <sys_update_name>sys_ui_page_a642f6190fbc72009da487ece1050e38</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-02-13 10:01:26</sys_updated_on>
+        <sys_updated_by>aCPullen</sys_updated_by>
+        <sys_updated_on>2017-03-06 00:17:40</sys_updated_on>
     </sys_ui_page>
 </record_update>

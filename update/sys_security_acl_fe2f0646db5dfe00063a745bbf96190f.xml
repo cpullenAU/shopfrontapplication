@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_10241_shopfront_funding_lead_application</description>
+        <name>x_10241_shopfront_funding_lead_application</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>aCPullen</sys_created_by>
+        <sys_created_on>2017-03-06 00:54:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>fe2f0646db5dfe00063a745bbf96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_10241_shopfront_funding_lead_application</sys_name>
+        <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+        <sys_update_name>sys_security_acl_fe2f0646db5dfe00063a745bbf96190f</sys_update_name>
+        <sys_updated_by>aCPullen</sys_updated_by>
+        <sys_updated_on>2017-03-06 00:54:32</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

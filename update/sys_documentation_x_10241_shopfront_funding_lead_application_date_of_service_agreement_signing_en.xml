@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="date_of_service_agreement_signing" label="Date of service agreement signing" language="en" table="x_10241_shopfront_funding_lead_application">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>date_of_service_agreement_signing</element>
+            <help/>
+            <hint/>
+            <label>Date of service agreement signing</label>
+            <language>en</language>
+            <name>x_10241_shopfront_funding_lead_application</name>
+            <plural>Date of service agreement signings</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>aCPullen</sys_created_by>
+            <sys_created_on>2017-03-06 03:53:37</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>b9283e82db9dfe00063a745bbf9619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Date of service agreement signing</sys_name>
+            <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+            <sys_update_name>sys_documentation_x_10241_shopfront_funding_lead_application_date_of_service_agreement_signing_en</sys_update_name>
+            <sys_updated_by>aCPullen</sys_updated_by>
+            <sys_updated_on>2017-03-06 03:53:37</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

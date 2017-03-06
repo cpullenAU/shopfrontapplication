@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_group_no_mtom">
+    <sc_cat_item_group_no_mtom action="INSERT_OR_UPDATE">
+        <sc_avail_group display_value="No Access to Catalog" name="No Access to Catalog">6058bfb46f59e100a432056f5d3ee48e</sc_avail_group>
+        <sc_cat_item display_value="HCP Enquiry Form">ba7d5e09dbd13a005c0973e9bf9619cf</sc_cat_item>
+        <sys_class_name>sc_cat_item_group_no_mtom</sys_class_name>
+        <sys_created_by>aCPullen</sys_created_by>
+        <sys_created_on>2017-03-02 23:23:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5ead1e09dbd13a005c0973e9bf9619e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HCP Enquiry Form.No Access to Catalog</sys_name>
+        <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+        <sys_update_name>sc_cat_item_group_no_mtom_5ead1e09dbd13a005c0973e9bf9619e1</sys_update_name>
+        <sys_updated_by>aCPullen</sys_updated_by>
+        <sys_updated_on>2017-03-02 23:23:56</sys_updated_on>
+    </sc_cat_item_group_no_mtom>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>true</is_fulfillment>
+        <name>x_10241_shopfront_funding_lead_application</name>
+        <owner_condition table="x_10241_shopfront_funding_lead_application">opened_by=javascript:gs.getUserID()^EQ<item endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </owner_condition>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>aCPullen</sys_created_by>
+        <sys_created_on>2017-03-06 00:54:33</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f62f0646db5dfe00063a745bbf961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_10241_shopfront_funding_lead_application</sys_name>
+        <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+        <sys_update_name>ua_table_licensing_config_f62f0646db5dfe00063a745bbf961919</sys_update_name>
+        <sys_updated_by>aCPullen</sys_updated_by>
+        <sys_updated_on>2017-03-06 00:54:33</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>

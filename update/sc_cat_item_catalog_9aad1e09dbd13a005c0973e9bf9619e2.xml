@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="HCP Enquiry Form">ba7d5e09dbd13a005c0973e9bf9619cf</sc_cat_item>
+        <sc_catalog display_value="Service Catalogue">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>aCPullen</sys_created_by>
+        <sys_created_on>2017-03-02 23:23:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>9aad1e09dbd13a005c0973e9bf9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalogue.HCP Enquiry Form</sys_name>
+        <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_9aad1e09dbd13a005c0973e9bf9619e2</sys_update_name>
+        <sys_updated_by>aCPullen</sys_updated_by>
+        <sys_updated_on>2017-03-02 23:23:56</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

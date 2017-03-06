@@ -117,11 +117,11 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-01-31 08:29:51</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_by>aCPullen</sys_created_by>
+            <sys_created_on>2017-03-06 00:22:03</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_id>85517c530f2032009da487ece1050e60</sys_id>
+            <sys_id>beb70242db5dfe00063a745bbf9619af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_10241_shopfront_activity_table</sys_name>
             <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
@@ -129,9 +129,9 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
             <sys_update_name>sys_ui_list_x_10241_shopfront_activity_table_null</sys_update_name>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-01-31 08:29:51</sys_updated_on>
-            <sys_user/>
+            <sys_updated_by>aCPullen</sys_updated_by>
+            <sys_updated_on>2017-03-06 00:22:03</sys_updated_on>
+            <sys_user display_value="Chris Pullen (Admin)">1b3218a56ff0a100bdf80575eb3ee4e7</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

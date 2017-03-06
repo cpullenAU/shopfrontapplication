@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="HCP Funding Enquiry" max_length="40" name="x_10241_shopfront_hcp_funding_enquiry" type="collection">
+        <element choice="3" label="Branch" max_length="4000" name="branch" type="glide_list">
+            <choice/>
+        </element>
+        <element label="Date of Face to Face booked" max_length="40" name="date_of_face_to_face_booked" type="glide_date"/>
+        <element label="Date of referral to ACAS" max_length="40" name="date_of_referral_to_acas" type="glide_date"/>
+        <element label="Date of service agreement signing" max_length="40" name="date_of_service_agreement_signing" type="glide_date"/>
+        <element label="Enquiry Source" max_length="4000" name="enquiry_source" type="glide_list"/>
+        <element label="First Contact Date" max_length="40" name="first_contact_date" type="glide_date"/>
+        <element label="First Contact Date by Branch" max_length="40" name="first_contact_date_by_branch" type="glide_date"/>
+        <element label="First Name" max_length="100" name="first_name" type="string"/>
+        <element label="HCP Approval?" max_length="40" name="hcp_approval" type="boolean"/>
+        <element label="Last Name" max_length="1000" name="last_name" type="string"/>
+        <element display="true" label="Referral ID" max_length="1000" name="referral_id" type="string"/>
+        <element label="Rejection reason" max_length="4000" name="rejection_reason" type="glide_list"/>
+        <element label="Service starting in MAC" max_length="40" name="service_starting_in_mac" type="glide_date"/>
+        <element label="Stage" max_length="4000" name="stage" type="string"/>
+    </element>
+</database>

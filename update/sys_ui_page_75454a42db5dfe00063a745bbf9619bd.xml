@@ -18,10 +18,20 @@ function onEnquiryTypeChange() {
         if (dataType) {
             $(this).toggle(dataType == selectedType);
         }
+        document.getElementById("enquiryDetail").selectedIndex = 0;
+        $("#enquiryDescription").hide();
     });
 }
 
+function initialiseForm() {
+    /* Set's initial variables for expected form behaviour */
+    $("#custMemberNumber").hide();
+    $("#custTypeNew").trigger("click");
+
+}
+
 $(document).ready(function () {
+    initialiseForm();
     onEnquiryDetailChange();
     onEnquiryTypeChange();
 
@@ -34,58 +44,63 @@ $(document).ready(function () {
     });
 
     $("#custTypeButtons .btn").click(function () {
-        if($("input", this).val() == "Existing"){
+        if ($("input", this).val() == "Existing") {
             $("#custMemberNumber").show();
         }
-        else{
+        else {
             $("#custMemberNumber").hide();
         }
     });
-    
+
 
     $("#noCustName").click(function () {
         if ($(this).is(":checked")) {
             $("#custFirstName")
                 .val("Not provided")
-                .prop('disabled', true);
-
+                .hide();
             $("#custLastName")
                 .val("Not provided")
-                .prop('disabled', true);
+                .hide();
         } else {
             $("#custFirstName")
                 .val("")
-                .prop('disabled', false);
-
+                .show();
             $("#custLastName")
                 .val("")
-                .prop('disabled', false);
+                .show();
         }
     });
 
     $("#noCustContact").click(function () {
         if ($(this).is(":checked")) {
             $("#custEmail")
-                .val("Not provided")
-                .prop('disabled', true);
-
+                .val("Not@provided.com")
+                .hide();
             $("#custPhoneNumber")
                 .val("Not provided")
-                .prop('disabled', true);
+                .hide();
+            $("#contactGroup")
+                .hide();
+            $("#callbackButtons")
+                .hide();
+            $("#enquiryCallbackNo").trigger("click");
         } else {
             $("#custEmail")
                 .val("")
-                .prop('disabled', false);
-
+                .show();
             $("#custPhoneNumber")
                 .val("")
-                .prop('disabled', false);
+                .show();
+            $("#contactGroup")
+                .show();
+            $("#callbackButtons")
+                .show();
         }
     });
 });]]></client_script>
         <description/>
         <direct>false</direct>
-        <endpoint>x_10241_shopfront_Test Page.do</endpoint>
+        <endpoint>x_10241_shopfront_Shopfront Entry Form - CP2.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
     <html>
@@ -176,17 +191,17 @@ $(document).ready(function () {
                         <div class="form-group">
                             <div class="col-sm-4">
                                 <div id="custTypeButtons" class="btn-group btn-group-justified btn-sm no-pad" data-toggle="buttons">
-                                    <label class="btn btn-default active">
-                                        <input type="radio" name="custType" id="custTypeNew" value="New" checked="true" />New customer
+                                    <label class="btn btn-default " id="custTypeNew">
+                                        <input type="radio" name="custType"  value="New"  />New customer
                                     </label>
-                                    <label class="btn btn-default ">
-                                        <input type="radio" name="custType" id="custTypeExisting" value="Existing" />Existing customer
-                                    </label>                                
-                                </div>                                
+                                    <label class="btn btn-default active" id="custTypeExisting">
+                                        <input type="radio" name="custType"  value="Existing" checked="true"/>Existing customer
+                                    </label>
+                                </div>
                             </div>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" id="custMemberNumber" name="custMemberNumber" placeholder="Member number" />                                    
-                            </div>  
+                                <input type="text" class="form-control" id="custMemberNumber" name="custMemberNumber" placeholder="Member number" />
+                            </div>
                         </div>
                         <div class="form-label">Name</div>
                         <div class="form-group">
@@ -208,7 +223,7 @@ $(document).ready(function () {
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <div class="form-group" style="margin-bottom:0;margin-top:5px">
+                                <div id="contactGroup" class="form-group" style="margin-bottom:0;margin-top:5px">
                                     <div class="col-sm-6">
                                         <label for="custPhoneNumber" class="sr-only">Customer phone number</label>
                                         <div class="input-group">
@@ -237,10 +252,12 @@ $(document).ready(function () {
                                 <label for="enquiryType">Business area</label>
                                 <select class="form-control" id="enquiryType" name="enquiryType" required="true">
                                     <option value="">Please select option...</option>
+                                    <option value="Home Care"> Home Care</option>
+                                    <option value="IAL Other"> IAL villages / aged care </option>
                                     <option value="Health">Health insurance</option>
                                     <option value="Investments">Investments</option>
-                                    <option value="Financial advice">Financial advice</option>
-                                    <option value="Banking">Banking</option>
+                                    <option value="PFS">Personal Finance</option>
+                                    <option value="Banking">Banking (Big Sky)</option>
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
@@ -249,8 +266,8 @@ $(document).ready(function () {
                                 <select class="form-control" id="enquiryDetail" name="enquiryDetail" required="true">
                                     <option value="">Please select option...</option>
                                     <option value="General enquiry" data-show-desc="true">General enquiry</option>
+                                    <option data-type="Home Care" value="NDIS">NDIS</option>
                                     <option data-type="Health" value="Health insurance claim">Claim</option>
-                                    <option data-type="Investments" value="Health insurance claim">Claim</option>
                                 </select>
                             </div>
                         </div>
@@ -265,7 +282,7 @@ $(document).ready(function () {
                                 <textarea id="notes" name="notes" class="form-control" rows="6"></textarea>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div id="callbackButtons" class="form-group">
                             <div class="col-md-12">
                                 Customer would like to be called back
                                 <div class="btn-group btn-sm " data-toggle="buttons">
@@ -291,59 +308,73 @@ $(document).ready(function () {
 
     </html>
 </j:jelly>]]></html>
-        <name>Test Page</name>
-        <processing_script><![CDATA[(function(){
-var enquiry = new GlideRecord('x_10241_shopfront_activity_table');
-	enquiry.initialize();
-	enquiry.customer_type = custType;
-	enquiry.customer_first_name = custFirstName;
-	enquiry.customer_last_name = custLastName;
-	enquiry.customer_email = custEmail;
-	enquiry.customer_phone_number = custPhoneNumber;
-	enquiry.customer_member_number = custMemberNumber;
+        <name>Shopfront Entry Form - CP2</name>
+        <processing_script><![CDATA[(function () {
+    var enquiry = new GlideRecord('x_10241_shopfront_activity_table');
+    enquiry.initialize();
 	
-	enquiry.enquiry_type = enquiryType;
-	enquiry.enquiry_type_details = enquiryDetail;
-	enquiry.enquiry_other_details = enquiryDescription;
-	enquiry.follow_up_required = enquiryCustCallback;
-	
-	
-	enquiry.additional_comments = notes;
-	
-	enquiry.insert();
+    if (custType) {
+        enquiry.customer_type = custType;
+    }
+    if (custFirstName) {
+        enquiry.customer_first_name = custFirstName;
+    }
+
+    if (custLastName) {
+        enquiry.customer_last_name = custLastName;
+    }
+
+    if (custEmail) {
+        enquiry.customer_email = custEmail;
+    }
+
+    if (custPhoneNumber) {
+        enquiry.customer_phone_number = custPhoneNumber;
+    }
+    
+	if (custMemberNumber) {
+		enquiry.customer_member_number = custMemberNumber;
+	}
+
+    if (enquiryType) {
+        enquiry.enquiry_type = enquiryType;
+    }
+
+    if (enquiryDetail) {
+        enquiry.enquiry_type_details = enquiryDetail;
+    }
+
+    if (enquiryDescription) {
+        enquiry.enquiry_other_details = enquiryDescription;
+    }
+    if (enquiryCustCallback) {
+        enquiry.follow_up_required = enquiryCustCallback;
+    }
+
+    if (notes) {
+        enquiry.additional_comments = notes;
+    }
+
+    enquiry.insert();
 })();
 
-	/* enquiry.customer_phone_number
-	enquiry.enquiry_type
-	enquiry.follow_up_required
-	enquiry.number
-	enquiry.request
-	
-	user.first_name = firstname;
-	user.last_name = lastname;
-	user.email = email;
-	user.password = password;
-	user.user_name = firstname.toLowerCase() + "." + lastname.toLowerCase();
-	user.insert();
-	
-	*/
 
 	
 
 ]]></processing_script>
         <sys_class_name>sys_ui_page</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-02-01 23:32:56</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>3f39c5b30f6432009da487ece1050eff</sys_id>
-        <sys_mod_count>33</sys_mod_count>
-        <sys_name>Test Page</sys_name>
+        <sys_created_by>aCPullen</sys_created_by>
+        <sys_created_on>2017-03-06 00:11:20</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>75454a42db5dfe00063a745bbf9619bd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Shopfront Entry Form - CP2</sys_name>
         <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
-        <sys_update_name>sys_ui_page_3f39c5b30f6432009da487ece1050eff</sys_update_name>
-        <sys_updated_by>michael</sys_updated_by>
-        <sys_updated_on>2017-02-03 06:18:34</sys_updated_on>
+        <sys_update_name>sys_ui_page_75454a42db5dfe00063a745bbf9619bd</sys_update_name>
+        <sys_updated_by>aCPullen</sys_updated_by>
+        <sys_updated_on>2017-03-06 00:11:27</sys_updated_on>
     </sys_ui_page>
 </record_update>

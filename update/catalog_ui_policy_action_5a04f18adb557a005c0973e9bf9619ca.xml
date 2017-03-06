@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="HCP Enquiry Form">ba7d5e09dbd13a005c0973e9bf9619cf</catalog_item>
+        <catalog_variable>IO:fd90fac1db153a005c0973e9bf961940</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>aCPullen</sys_created_by>
+        <sys_created_on>2017-03-05 22:56:11</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5a04f18adb557a005c0973e9bf9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>referral_id</sys_name>
+        <sys_package display_value="Shopfront Activity" source="x_10241_shopfront">ce7e6c530f2032009da487ece1050e53</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Shopfront Activity">ce7e6c530f2032009da487ece1050e53</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_5a04f18adb557a005c0973e9bf9619ca</sys_update_name>
+        <sys_updated_by>aCPullen</sys_updated_by>
+        <sys_updated_on>2017-03-05 22:56:11</sys_updated_on>
+        <table/>
+        <ui_policy display_value="(Shopfront) Show referral ID if required">de73318adb557a005c0973e9bf96197a</ui_policy>
+        <variable>referral_id</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>
